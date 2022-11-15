@@ -13,7 +13,7 @@ module.exports = {
     app: "./src/index.js",
   },
   output: {
-    path: path.join(__dirname, "..", "/dist"),
+    path: path.join(__dirname, "..", "/gg"),
     publicPath: "/",
     filename: "index.js",
     libraryTarget: "umd",
@@ -51,7 +51,7 @@ module.exports = {
     },
   },
   plugins: [
-    new CleanWebpackPlugin(["dist"], {
+    new CleanWebpackPlugin(["gg"], {
       root: process.cwd(),
     }),
     new HtmlWebpackPlugin({
