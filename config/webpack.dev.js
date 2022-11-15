@@ -13,13 +13,13 @@ module.exports = merge(config, {
      * ex: '/foo/bar' resolves to -> /index.html
      */
     historyApiFallback: true,
-    contentBase: './dist',
+    contentBase: './gg',
     quiet: true,
     overlay: true,
     hot: true,
   },
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'gg'),
   },
 });
