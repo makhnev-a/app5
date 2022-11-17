@@ -1,6 +1,6 @@
 import React from "react";
 
-const Counter = ({ onSetCounter = (f) => f, counter = 0 }) => {
+export const Counter = ({ onSetCounter = (f) => f, counter = 0 }) => {
   return (
     <div>
       <p>{counter}</p>
@@ -15,4 +15,14 @@ const Counter = ({ onSetCounter = (f) => f, counter = 0 }) => {
   );
 };
 
-export default Counter;
+export const TestBlackBlock = () => {
+  return (
+    <div style={{
+      width: "320px",
+      height: "568px",
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: "black"
+    }}/>
+  )
+}
